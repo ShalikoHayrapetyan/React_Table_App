@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+
+table{
+  margin: 20px;
+  margin-left: 25px;
+}
+tbody {
+  max-height: 200px;
+  overflow: auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.t-row:hover {
+  background-color: rgba(233, 224, 224, 0.747);
+}
+
+button{
+    margin: 2px 5px ;
+    cursor: pointer;
+   
   }
+  button:hover{
+    background-color: rgb(128, 165, 235);
+  }
+  input {
+    width: 92%;
+    margin: 1px 3px;
+  }
+  .table-header{
+    display: flex;
+  }
+  .sortBtn{
+    margin-left: 5px;
+    cursor: pointer;
+  }
+  .edit-check-btns{
+    display: flex;
+    width: 145px;
+    align-items: center;
+  }
+  table tbody tr:active, table tbody tr:hover {
+    background: #ccc;
+  }
+  .editBtn{
+    background-color: #17a2b8;
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: #fff
+  }
+  .deleteBtn{
+    background-color: #bd2130;    
+    border: 1px solid #ddd;
+    padding: 3px 10px;
+    border-radius: 3px;
+    color: #fff
+  }
+  .delSelBtn{
+    color: #212529;
+  }
+.addBtn{
+  background-color: #1e7e34;
+  border: 1px solid #ddd;
+  padding: 3px 10px;
+  border-radius: 3px;
+  color: #fff
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.selectAll{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.checkbox {
+  margin-left: 18px;
+  width: auto;
 }
